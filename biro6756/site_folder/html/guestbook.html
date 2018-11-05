@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<title>Guest Book</title>
+</head>
+
+<body>
+
+<h1>Dean Biron Guest Book</h1>
+
+<form
+ method="post"
+ action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+Enter Your Name: <input type="text" name="Name" size="40"/>
+<br/>
+<br/>
+Enter Your E-mail: <input type="text" name="Email" size="40"/>
+<br/>
+<br/>
+What country do you live in? <input type="text" name="Country" size="40"/>
+<br/>
+<br/>
+
+What is you age group?<br/>
+<input type="radio" name="AgeGroup" value="Under 18"/>Under 18<br>
+<input type="radio" name="AgeGroup" value="18-30" checked="checked"/>18-30<br>
+<input type="radio" name="AgeGroup" value="21-45"/>21-45<br>
+<input type="radio" name="AgeGroup" value="46-64"/>46-64<br>
+<input type="radio" name="AgeGroup" value="65 and over"/>65 and over
+<br/>
+<br/>
+Do you want to be on my mailing list?<input type="checkbox" name="Add to list"/>
+<br/>
+<br/>
+
+What web technologies are you interested in? (choose all that apply):
+<br/>
+<select name="technologies" multiple="multiple" size="6">
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavsScript</option>
+    <option>AJAX</option>
+    <option>SQL</option>
+    <option>PHP</option>
+</select>
+<br/>
+<br/>
+
+How did you find my website? <br/>
+<select name="source">
+    <option value="none">Select One</option>
+    <option>I'm a friend</option>
+    <option>A friend directed me to your site</option>
+    <option>School web site</option>
+    <option>A search engine directed me to your site</option>
+    <option>I came across your site by accident</option>
+    <option>Other</option>
+</select>
+<br/>
+<br/>
+
+Comments:<br/>
+<textarea name="comments" cols="30" rows="3">
+</textarea>
+<br/>
+<br/>
+
+<input type="submit"/>
+<input type="reset"/>
+
+</form>
+
+</body>
+</html>
